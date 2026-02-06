@@ -1,0 +1,21 @@
+:root {
+  --page-layout-height: 100lvh;
+
+  --content-max: 51rem;
+  --content-gutter: var(--space-6);
+
+  --viewport-inline: 100vw;
+
+  --t-container-padding-inline: max(
+    var(--content-gutter),
+    calc((var(--viewport-inline) - var(--content-max)) / 2)
+  );
+
+  --scroll-offset: 1rlh;
+}
+
+@supports (width: 100svw) {
+  :root {
+    --viewport-inline: 100svw;
+  }
+}

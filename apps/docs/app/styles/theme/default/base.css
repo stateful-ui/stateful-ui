@@ -1,0 +1,9 @@
+:root {
+  --b-font-family: var(--font-switzer);
+  --b-font-size: 1rem;
+  --b-line-height: 1.5;
+  --b-letter-spacing: 0;
+
+  --b-root-background: light-dark(oklch(0.98 0 0), oklch(0 0 0));
+  --b-text-color: #000;
+}

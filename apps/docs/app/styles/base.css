@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+
+  font-family: var(--b-font-family, ui-sans-serif, system-ui, sans-serif);
+  font-size: var(--b-font-size, 1rem);
+  line-height: var(--b-line-height, 1.5);
+
+  scroll-padding-block-start: var(--b-scroll-offset, 1rlh);
+}
+
+body {
+  background: var(--b-root-background);
+
+  color: var(--b-text-color);
+  letter-spacing: var(--b-letter-spacing, 0);
+}
+
+/* ==================== */
+/* TYPOGRAPHY */
+/* ==================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: initial;
+  font-weight: var(--b-font-weight-heading, 700);
+  letter-spacing: var(--b-letter-spacing-heading, 0);
+  text-wrap: var(--b-text-wrap-heading, balance);
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+  touch-action: manipulation;
+}
+
+address {
+  font-style: normal;
+}
+
+/* ==================== */
+/* LISTS */
+/* ==================== */
+
+ul,
+ol {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+/* ==================== */
+/* MEDIA */
+/* ==================== */
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+svg {
+  fill: currentColor;
+}
+
+/* ==================== */
+/* TABLES */
+/* ==================== */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ==================== */
+/* FORMS */
+/* ==================== */
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button,
+[role="button"] {
+  touch-action: manipulation;
+}
+
+/* ==================== */
+/* FOCUS */
+/* ==================== */
+
+:focus-visible {
+  :where(&) {
+    --b-focus-width: var(--b-focus-ring-width, 2px);
+    --b-focus-style: var(--b-focus-ring-style, solid);
+    --b-focus-offset: var(--b-focus-ring-offset, 2px);
+    --b-focus-color: var(--b-focus-ring-color, Highlight);
+    --b-focus-radius: var(--b-focus-ring-radius, 2px);
+  }
+
+  outline-width: var(--b-focus-width);
+  outline-style: var(--b-focus-style);
+  outline-offset: var(--b-focus-offset);
+  outline-color: var(--b-focus-color);
+  border-radius: var(--b-focus-radius);
+}
+
+/* ==================== */
+/* SELECTION */
+/* ==================== */
+
+::selection {
+  background-color: var(--b-selection-background-color, Highlight);
+  color: var(--b-selection-text-color, HighlightText);
+}
+
+:is(img, picture, video)::selection {
+  background-color: transparent;
+}
+
+/* ==================== */
+/* VISIBILITY */
+/* ==================== */
+
+[hidden] {
+  display: none !important;
+}
