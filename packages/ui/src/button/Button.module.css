@@ -1,0 +1,11 @@
+.Button {
+  color: var(--color-text);
+
+  :where(&) {
+    --color-text: currentColor;
+  }
+
+  &[disabled] {
+    --color-text: color-mix(in oklch, currentColor 50%, transparent);
+  }
+}
