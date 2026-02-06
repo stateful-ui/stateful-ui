@@ -34,7 +34,7 @@
 
     &:hover,
     &:focus-visible {
-      background-color: hsl(0 0% 90%);
+      background-color: color-mix(in oklch, currentColor 10%, transparent);
     }
   }
 }
