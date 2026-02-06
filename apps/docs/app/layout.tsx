@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Stateful CSS",
-  description: "Stateful CSS Documentation",
+  title: "Stateful UI",
+  description: "Stateful UI Documentation",
 };
 
 export default function RootLayout({
