@@ -1,0 +1,17 @@
+[data-theme="default"] {
+  --t-font-size: 1rem;
+  --t-font-size-small: 0.875rem;
+  --t-font-size-normal: 1rem;
+  --t-font-size-medium: 1.125rem;
+  --t-font-size-large: 1.25rem;
+  --t-font-size-xlarge: 1.5rem;
+
+  --t-font-weight-normal: 450;
+  --t-font-weight-medium: 500;
+  --t-font-weight-semibold: 550;
+  --t-font-weight-bold: 650;
+
+  --t-letter-spacing-tight: -0.01em;
+  --t-letter-spacing-normal: 0em;
+  --t-letter-spacing-comfortable: 0.00625em;
+}

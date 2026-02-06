@@ -1,0 +1,33 @@
+:root {
+  --t-border-width-hairline: 1px;
+  --t-border-width-thin: 1px;
+  --t-border-width-default: 2px;
+  --t-border-width-thick: 3px;
+  --t-border-width-heavy: 4px;
+
+  --t-radius-none: 0;
+  --t-radius-small: var(--t-space-1); /* 4px */
+  --t-radius-medium: var(--t-space-2); /* 8px */
+  --t-radius-large: var(--t-space-3); /* 12px */
+  --t-radius-xlarge: var(--t-space-4); /* 16px */
+  --t-radius-2xlarge: var(--t-space-6); /* 24px */
+  --t-radius-full: 9999px;
+
+  --t-shadow-small: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --t-shadow-medium: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --t-shadow-large: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  --t-shadow-drop: 0 1rem 1rem rgb(0 0 0 / 0.1);
+
+  --t-focus-ring-width: var(--t-border-width-heavy);
+  --t-focus-ring-offset: var(--t-border-width-hairline);
+  --t-focus-ring-style: solid;
+
+  --t-blur-small: var(--t-space-2); /* 8px */
+  --t-blur-medium: var(--t-space-3); /* 12px */
+  --t-blur-large: var(--t-space-4); /* 16px */
+
+  --t-underline-thin: max(1px, 0.06em);
+  --t-underline-default: max(2px, 0.09em);
+  --t-underline-offset-small: max(2px, 0.12em);
+  --t-underline-offset-medium: max(3px, 0.18em);
+}

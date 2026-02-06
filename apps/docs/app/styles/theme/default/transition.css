@@ -1,0 +1,8 @@
+:root {
+  --t-transition-duration: 0.1s;
+  --t-transition-duration-slow: 0.225s;
+  --t-transition-function: ease;
+
+  --t-transition-preset: var(--t-transition-duration)
+    var(--t-transition-function);
+}
