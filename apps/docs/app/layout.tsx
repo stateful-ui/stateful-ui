@@ -1,3 +1,4 @@
+import "@/app/styles/index.css";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 
@@ -29,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" data-theme="default">
       <body className={`${Switzer.className}`}>{children}</body>
     </html>
   );
