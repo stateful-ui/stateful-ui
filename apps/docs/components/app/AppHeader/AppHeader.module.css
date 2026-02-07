@@ -1,0 +1,38 @@
+.AppHeader {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: var(--t-elevation-fixed);
+  background-color: var(--t-color-background-secondary);
+  border-block-end: var(--t-border-thin) solid var(--t-color-border-primary);
+}
+.Wrapper {
+  display: flex;
+  justify-content: space-between;
+  min-height: calc(
+    var(--app-header-height) - (2 * var(--app-header-padding-vertical))
+  );
+
+  border-inline: var(--t-border-thin) solid var(--t-color-border-primary);
+
+  padding-block: var(--app-header-padding-vertical);
+  padding-inline: var(--t-space-9);
+}
+
+.Navigation {
+  ul {
+    display: flex;
+    gap: var(--t-space-6);
+
+    a {
+      font-size: var(--t-font-size-small);
+      font-weight: var(--t-font-weight-semibold);
+      transition: color var(--t-transition-preset);
+      color: color-mix(in oklch, currentColor, transparent 20%);
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
