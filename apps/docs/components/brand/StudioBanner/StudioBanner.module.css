@@ -1,0 +1,36 @@
+.StudioBanner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: var(--t-space-5);
+  background-color: var(--s-background-color);
+  transition:
+    background-color var(--t-transition-preset),
+    color var(--t-transition-preset);
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  a {
+    font-weight: var(--t-font-weight-semibold);
+    color: var(--s-text-color);
+
+    :where(&) {
+      /* --s-background-color: var(--t-text-color); */
+      --s-text-color: inherit;
+    }
+
+    &:hover {
+      --s-text-color: var(--t-color-accent-neon);
+      text-decoration: underline;
+      text-underline-offset: 0.125em;
+      text-decoration-thickness: 0.0875em;
+    }
+
+    sup {
+      font-size: 0.75em;
+      vertical-align: super;
+    }
+  }
+}
