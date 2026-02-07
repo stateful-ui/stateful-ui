@@ -1,10 +1,11 @@
+import Brand from "@/components/brand/Brand";
 import Link from "next/link";
-import styles from "./Page.module.css";
+import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <main className={styles.Page}>
-      <h1>Stateful UI</h1>
+      <Brand as="h1" size="large" />
       <Link href="/docs">Documentation</Link>
     </main>
   );

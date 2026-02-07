@@ -6,25 +6,6 @@
   justify-content: center;
   gap: var(--t-space-4);
 
-  h1 {
-    font-weight: var(--t-font-weight-semibold);
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 0.375em;
-    font-size: var(--t-font-size-xlarge);
-
-    &::before {
-      content: "";
-      height: 1.25em;
-      aspect-ratio: 1/1;
-      mask-image: var(--stateful-ui-logo);
-      mask-repeat: no-repeat;
-      mask-size: 100%;
-      background-color: currentColor;
-    }
-  }
-
   a {
     font-size: var(--t-font-size-small);
     padding-block: var(--t-space-1-5);
