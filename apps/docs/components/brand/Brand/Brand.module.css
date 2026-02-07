@@ -1,0 +1,52 @@
+.Brand {
+  font-weight: var(--t-font-weight-semibold);
+  display: flex;
+  align-items: center;
+  gap: 0.375em;
+  font-size: var(--s-font-size);
+  line-height: var(--s-icon-ratio);
+  color: var(--s-text-color);
+  background-color: var(--s-background-color);
+  padding: var(--c-padding-block) var(--c-padding-inline);
+  margin: calc(-1 * var(--c-padding-block)) calc(-1 * var(--c-padding-inline));
+  border-radius: var(--t-radius-medium);
+  outline-color: var(--s-outline-color);
+  transition:
+    color var(--t-transition-preset),
+    background-color var(--t-transition-preset);
+
+  :where(&) {
+    --s-icon-ratio: 1.333;
+    --c-padding-block: var(--t-space-2);
+    --c-padding-inline: var(--t-space-2);
+    --s-outline-color: var(--t-focus-ring-color);
+  }
+
+  &[href]:hover {
+    /* --s-text-color: var(--t-color-accent); */
+    --s-text-color: #fff;
+  }
+  &[href]:focus-visible {
+    --s-text-color: var(--t-color-background-secondary);
+    --s-background-color: var(--t-focus-ring-color);
+  }
+
+  &[data-size="small"] {
+    --s-font-size: var(--t-font-size-small);
+  }
+  &[data-size="medium"] {
+    --s-font-size: var(--t-font-size-medium);
+  }
+  &[data-size="large"] {
+    --s-font-size: var(--t-font-size-large);
+  }
+}
+
+.BrandIcon {
+  height: calc(var(--s-icon-ratio) * 1em);
+  aspect-ratio: 1/1;
+  mask-image: var(--stateful-ui-logo);
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+  background-color: currentColor;
+}
