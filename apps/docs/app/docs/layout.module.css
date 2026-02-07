@@ -1,0 +1,34 @@
+.Layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  padding-block-start: var(--app-header-height);
+  z-index: var(--t-elevation-base);
+}
+
+.Page {
+  flex: 1;
+  border-inline: var(--t-border-thin) solid var(--t-color-border-primary);
+  background-color: var(--t-color-background-content);
+
+  display: grid;
+  grid-template-columns:
+    minmax(0, var(--section-navigation-width))
+    minmax(0, 1fr)
+    minmax(0, var(--table-of-contents-width));
+  gap: var(--t-space-9);
+  align-items: start;
+
+  :where(&) {
+    --section-navigation-width: 250px;
+    --table-of-contents-width: 250px;
+  }
+}
+
+.Main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 150dvh;
+  padding-block-start: var(--t-space-18);
+}

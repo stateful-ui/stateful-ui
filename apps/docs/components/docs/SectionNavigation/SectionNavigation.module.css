@@ -1,0 +1,10 @@
+.SectionNavigation {
+  /* height: 100%; */
+  position: sticky;
+  top: var(--app-header-height);
+  background-color: gray;
+
+  z-index: var(--t-elevation-sticky);
+
+  overflow: auto;
+}

@@ -1,0 +1,12 @@
+.Page {
+  h1 {
+    font-size: var(--t-font-size-xlarge);
+    font-weight: var(--t-font-weight-medium);
+    margin-block-end: var(--t-space-6);
+  }
+
+  p {
+    color: color-mix(in srgb, currentColor 80%, transparent);
+    letter-spacing: var(--t-letter-spacing-comfortable);
+  }
+}

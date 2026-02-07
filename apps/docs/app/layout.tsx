@@ -1,4 +1,4 @@
-import "@/app/styles/index.css";
+import "@/styles/index.css";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 
