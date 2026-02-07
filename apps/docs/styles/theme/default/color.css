@@ -1,0 +1,61 @@
+[data-theme="default"] {
+  color-scheme: light dark;
+
+  --_chroma: 0.002;
+  --_hue: 265;
+
+  --t-color-accent-indigo: oklch(0.525 0.275 280);
+  --t-color-accent-orange: oklch(0.7 0.18 55);
+  --t-color-accent-grapefruit: oklch(0.65 0.2 35);
+  --t-color-accent-neon: oklch(0.82 0.22 160);
+  --t-color-accent-yellow: oklch(0.788 0.16 85);
+
+  --t-color-accent: light-dark(
+    var(--t-color-accent-indigo),
+    var(--t-color-accent-neon)
+  );
+
+  --t-text-color: light-dark(
+    oklch(0.2 var(--_chroma) var(--_hue)),
+    oklch(0.9 var(--_chroma) var(--_hue))
+  );
+
+  --t-root-background: light-dark(
+    oklch(0.98 var(--_chroma) var(--_hue)),
+    oklch(0.15 var(--_chroma) var(--_hue))
+  );
+
+  --t-color-background-content: light-dark(
+    oklch(1 var(--_chroma) var(--_hue)),
+    oklch(0.155 var(--_chroma) var(--_hue))
+  );
+
+  --t-color-background-primary: light-dark(
+    oklch(0.98 var(--_chroma) var(--_hue)),
+    oklch(0.12 var(--_chroma) var(--_hue))
+  );
+
+  --t-color-background-secondary: light-dark(
+    oklch(0.99 var(--_chroma) var(--_hue)),
+    oklch(0.13 var(--_chroma) var(--_hue))
+  );
+
+  --t-color-background-tertiary: light-dark(
+    oklch(0.95 var(--_chroma) var(--_hue)),
+    oklch(0.125 var(--_chroma) var(--_hue))
+  );
+
+  --t-color-border-primary: light-dark(
+    oklch(0.955 var(--_chroma) var(--_hue)),
+    oklch(0.19 var(--_chroma) var(--_hue))
+  );
+
+  --t-selection-background: light-dark(
+    color-mix(in oklch, var(--t-text-color), transparent 90%),
+    color-mix(in oklch, var(--t-text-color), transparent 10%)
+  );
+  --t-selection-text-color: light-dark(
+    currentColor,
+    var(--t-color-background-content)
+  );
+}

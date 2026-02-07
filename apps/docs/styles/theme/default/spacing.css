@@ -12,6 +12,7 @@
   --t-space-5: calc(var(--t-spacing) * 5); /* 20px */
   --t-space-6: calc(var(--t-spacing) * 6); /* 24px */
   --t-space-8: calc(var(--t-spacing) * 8); /* 32px */
+  --t-space-9: calc(var(--t-spacing) * 9); /* 36px */
   --t-space-10: calc(var(--t-spacing) * 10); /* 40px */
   --t-space-12: calc(var(--t-spacing) * 12); /* 48px */
   --t-space-16: calc(var(--t-spacing) * 16); /* 64px */

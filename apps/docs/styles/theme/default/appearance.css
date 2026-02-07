@@ -1,9 +1,9 @@
 :root {
-  --t-border-width-hairline: 1px;
-  --t-border-width-thin: 1px;
-  --t-border-width-default: 2px;
-  --t-border-width-thick: 3px;
-  --t-border-width-heavy: 4px;
+  --t-border-hairline: 1px;
+  --t-border-thin: 1px;
+  --t-border-default: 2px;
+  --t-border-thick: 3px;
+  --t-border-heavy: 4px;
 
   --t-radius-none: 0;
   --t-radius-small: var(--t-space-1); /* 4px */
@@ -21,6 +21,7 @@
   --t-focus-ring-width: var(--t-border-width-heavy);
   --t-focus-ring-offset: var(--t-border-width-hairline);
   --t-focus-ring-style: solid;
+  --t-focus-ring-color: var(--t-color-accent);
 
   --t-blur-small: var(--t-space-2); /* 8px */
   --t-blur-medium: var(--t-space-3); /* 12px */

@@ -1,0 +1,7 @@
+.container {
+  margin-inline: var(--t-container-gutter-inline);
+}
+
+.container-padded {
+  padding-inline: var(--t-container-gutter-inline);
+}

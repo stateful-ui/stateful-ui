@@ -1,0 +1,151 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-family: var(--b-font-family, ui-sans-serif, system-ui, sans-serif);
+  font-size: var(--b-font-size, 1rem);
+  line-height: var(--b-line-height, 1.5);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-size-adjust: 100%;
+
+  scroll-padding-block-start: var(--b-scroll-offset, 1rlh);
+
+  /* Mobile: removes iOS tap highlight that obscures custom interactive states */
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background: var(--b-root-background, Canvas);
+  color: var(--b-text-color, CanvasText);
+
+  letter-spacing: var(--b-letter-spacing, 0);
+
+  /* Prevents body from collapsing shorter than viewport */
+  min-block-size: 100dvh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: initial;
+  font-weight: var(--b-font-weight-heading, 700);
+  letter-spacing: var(--b-letter-spacing-heading, 0);
+  text-wrap: var(--b-text-wrap-heading, balance);
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+  touch-action: manipulation;
+}
+
+address {
+  font-style: normal;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+/* Prevents media from breaking aspect ratio when sized */
+img,
+video {
+  height: auto;
+}
+
+svg {
+  fill: currentColor;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button,
+[role="button"] {
+  touch-action: manipulation;
+}
+
+textarea {
+  resize: vertical;
+}
+
+summary {
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline-width: var(--b-focus-ring-width, 2px);
+  outline-style: var(--b-focus-ring-style, solid);
+  outline-offset: var(--b-focus-ring-offset, 2px);
+  /* NOTE: border-radius doesn't affect outline shape — use box-shadow for rounded focus rings */
+  border-radius: var(--b-focus-ring-radius, 2px);
+}
+
+::selection {
+  background: var(--b-selection-background, Highlight);
+  color: var(--b-selection-text-color, HighlightText);
+}
+
+:is(img, picture, video)::selection {
+  background-color: transparent;
+}
+
+dialog {
+  color: inherit;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: var(--b-motion-reduced-duration, 0.01ms) !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: var(--b-motion-reduced-duration, 0.01ms) !important;
+
+    animation-delay: 0s !important;
+    transition-delay: 0s !important;
+    scroll-behavior: auto !important;
+  }
+
+  /*
+   * Usage for safe subtle transitions:
+   * .your-component {
+   *   --b-motion-reduced-duration: 150ms; // Allows short opacity fades
+   *   transition: opacity 300ms; // Will be 150ms when motion is reduced
+   * }
+   */
+}

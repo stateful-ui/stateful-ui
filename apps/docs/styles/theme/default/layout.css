@@ -1,12 +1,14 @@
 :root {
   --page-layout-height: 100lvh;
+  --app-header-height: var(--t-space-18);
+  --app-header-padding-vertical: var(--t-space-6);
 
-  --content-max: 51rem;
-  --content-gutter: var(--space-6);
+  --content-max: 95rem;
+  --content-gutter: var(--t-space-9);
 
   --viewport-inline: 100vw;
 
-  --t-container-padding-inline: max(
+  --t-container-gutter-inline: max(
     var(--content-gutter),
     calc((var(--viewport-inline) - var(--content-max)) / 2)
   );

@@ -1,0 +1,9 @@
+:root {
+  --b-font-family: var(--font-switzer);
+
+  --b-root-background: var(--t-root-background);
+  --b-text-color: var(--t-text-color);
+
+  --b-selection-background: var(--t-selection-background);
+  --b-selection-text-color: var(--t-selection-text-color);
+}
